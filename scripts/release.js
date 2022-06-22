@@ -50,7 +50,4 @@ const execAsync = promisify(exec);
   } catch (error) {
     console.log(chalk.red(error.stderr));
   }
-
-
-
 })()
