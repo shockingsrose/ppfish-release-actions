@@ -19,7 +19,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "node scripts/predeploy.js",
-    "release": "node scripts/release.js"
+    "release": "node scripts/release.js",
+    "pub": "echo pub",
+    "pub:alpha": "echo alpha"
   },
   "dependencies": {
     "react": "^18.0.0",

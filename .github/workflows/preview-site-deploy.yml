@@ -2,7 +2,7 @@ name: Preview Site Deploy
 
 on:
   workflow_run:
-    workflows: ["release"]
+    workflows: [Release Publish]
     types:
       - completed
   # Allows you to run this workflow manually from the Actions tab
@@ -30,7 +30,7 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: docs # The folder the action should deploy.  
       
-      - name: get changelog
+      - name: get version
         id: predeploy
         run: npm run predeploy
 
